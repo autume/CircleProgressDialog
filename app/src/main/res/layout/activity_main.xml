@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:oden="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syd.oden.odendemo.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.syd.oden.circleprogressdialog.view.RotateLoading
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <com.syd.oden.circleprogressdialog.view.RotateLoading
+            oden:loading_color="@color/colorPrimary"
+            oden:loading_width="3dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <com.syd.oden.circleprogressdialog.view.RotateLoading
+            oden:loading_color="@color/colorAccent"
+            oden:loading_width="6dp"
+            oden:shadow_offset="8dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="400dp"
+        >
+
+        <Button
+            android:id="@+id/btn_show"
+            android:text="SHOW DIALOG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

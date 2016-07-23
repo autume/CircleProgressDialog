@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oden="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/llProgress"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <com.syd.oden.circleprogressdialog.view.RotateLoading
+            android:id="@+id/rotateloading"
+            oden:loading_visible="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/progreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#c0000000"
+        android:text="loading..." />
+
+</LinearLayout>

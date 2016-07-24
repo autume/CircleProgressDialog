@@ -14,7 +14,7 @@ Add this to your build.gradle:
        compile 'com.github.autume:CircleProgressDialog:1.0.0'
     }
 ```
-## useage
+## usage
 ### use in xml
 ```java
 <com.syd.oden.circleprogressdialog.view.RotateLoading

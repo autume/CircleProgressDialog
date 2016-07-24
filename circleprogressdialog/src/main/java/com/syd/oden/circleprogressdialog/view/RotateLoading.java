@@ -94,6 +94,11 @@ public class RotateLoading extends View {
         canvas.drawArc(loadingRectF, topDegree, arc, false, mPaint);
         canvas.drawArc(loadingRectF, bottomDegree, arc, false, mPaint);
 
+        try {
+            Thread.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         topDegree += 10;
         bottomDegree += 10;
         if (topDegree > 360) {

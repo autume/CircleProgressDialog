@@ -1,12 +1,10 @@
 package com.syd.oden.odendemo;
 
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
 import com.syd.oden.circleprogressdialog.core.CircleProgressDialog;
-import com.syd.oden.odenlib.utils.L;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;

@@ -29,11 +29,13 @@ Add this to your build.gradle:
 #### simple use
 ```java
 CircleProgressDialog circleProgressDialog;
+circleProgressDialog = new CircleProgressDialog(this);
 circleProgressDialog.showDialog(); 
 ```
 #### use with setting
 ```java
     CircleProgressDialog circleProgressDialog;
+    circleProgressDialog = new CircleProgressDialog(this);
 
     //可对对话框的大小、进度条的颜色、宽度、文字的颜色、内容等属性进行设置
     circleProgressDialog.setDialogSize(15);

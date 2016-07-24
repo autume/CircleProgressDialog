@@ -26,12 +26,12 @@ Add this to your build.gradle:
 ```
 
 ### use as a dialog
-simple use
+#### simple use
 ```java
 CircleProgressDialog circleProgressDialog;
 circleProgressDialog.showDialog(); 
 ```
-use with setting
+#### use with setting
 ```java
     CircleProgressDialog circleProgressDialog;
 

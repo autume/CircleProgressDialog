@@ -1,5 +1,5 @@
 # CircleProgressDialog
-an Android CircleProgressDialog
+an Android circle progress, also can us as a dialog.
 ## demo：
 ![](http://i.imgur.com/faMCeJD.gif)
 

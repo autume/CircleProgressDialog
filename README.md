@@ -1,4 +1,5 @@
 # CircleProgressDialog
+an Android CircleProgressDialog
 ## demo：
 ![](http://i.imgur.com/faMCeJD.gif)
 
@@ -50,4 +51,6 @@ circleProgressDialog.showDialog();
 
     circleProgressDialog.dismiss();//关闭对话框
 ```
+   
+   see detail in blog:http://blog.csdn.net/yaodong379/article/details/52081932
    

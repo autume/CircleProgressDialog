@@ -1,6 +1,6 @@
 # CircleProgressDialog
-an Android circle progress, also can us as a dialog.
-## demo：
+An Android circle progress, also can us as a dialog.
+## Demo：
 ![](http://i.imgur.com/faMCeJD.gif)
 
 ## Using as a dependency
@@ -15,8 +15,8 @@ Add this to your build.gradle:
        compile 'com.github.autume:CircleProgressDialog:1.0.0'
     }
 ```
-## usage
-### use in xml
+## Usage
+### Use in xml
 ```java
 <com.syd.oden.circleprogressdialog.view.RotateLoading
             oden:loading_color="@color/colorAccent"
@@ -26,14 +26,14 @@ Add this to your build.gradle:
             android:layout_height="100dp" />
 ```
 
-### use as a dialog
-#### simple use
+### Use as a dialog
+#### Simple use
 ```java
 CircleProgressDialog circleProgressDialog;
 circleProgressDialog = new CircleProgressDialog(this);
 circleProgressDialog.showDialog(); 
 ```
-#### use with setting
+#### Use with setting
 ```java
     CircleProgressDialog circleProgressDialog;
     circleProgressDialog = new CircleProgressDialog(this);
@@ -52,5 +52,5 @@ circleProgressDialog.showDialog();
     circleProgressDialog.dismiss();//关闭对话框
 ```
    
-   see detail in blog:http://blog.csdn.net/yaodong379/article/details/52081932
+   See detail in blog: http://blog.csdn.net/yaodong379/article/details/52081932
    

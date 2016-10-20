@@ -16,6 +16,7 @@ import com.syd.oden.circleprogressdialog.view.RotateLoading;
 public class CircleProgressDialog {
     private Context mContext;
     private Dialog mDialog;
+    public static final String ACTION_DIALOG_CANCEL = "com.oden.ACTION_DIALOG_CANCEL";
 
     //默认参数
     private int dialogSize = 65;
@@ -47,6 +48,14 @@ public class CircleProgressDialog {
         mDialog.show();
         mDialog.setContentView(R.layout.dialog_circle_progress);
 
+        mDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+                Tools.braodUpdate(mContext, ACTION_DIALOG_CANCEL);
+                isShowing = false;
+            }
+        });
+        
         progressTextView = (TextView) mDialog.findViewById(R.id.progreeTextView);
         RotateLoading mRotateLoading = (RotateLoading) mDialog.findViewById(R.id.rotateloading);
         LinearLayout layout = (LinearLayout) mDialog.findViewById(R.id.llProgress);

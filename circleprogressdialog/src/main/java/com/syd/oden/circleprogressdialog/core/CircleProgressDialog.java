@@ -3,6 +3,8 @@ package com.syd.oden.circleprogressdialog.core;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -16,7 +18,7 @@ import com.syd.oden.circleprogressdialog.view.RotateLoading;
 public class CircleProgressDialog {
     private Context mContext;
     private Dialog mDialog;
-    //public static final String ACTION_DIALOG_CANCEL = "com.oden.ACTION_DIALOG_CANCEL";
+    public static final String ACTION_DIALOG_CANCEL = "com.oden.ACTION_DIALOG_CANCEL";
 
     //默认参数
     private int dialogSize = 65;
@@ -48,7 +50,14 @@ public class CircleProgressDialog {
         mDialog.show();
         mDialog.setContentView(R.layout.dialog_circle_progress);
 
-      
+        mDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+                final Intent intent = new Intent(ACTION_DIALOG_CANCEL);
+                mContext.sendBroadcast(intent);
+                isShowing = false;
+            }
+        });
         
         progressTextView = (TextView) mDialog.findViewById(R.id.progreeTextView);
         RotateLoading mRotateLoading = (RotateLoading) mDialog.findViewById(R.id.rotateloading);

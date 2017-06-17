@@ -52,10 +52,10 @@ circleProgressDialog.showDialog();
     circleProgressDialog.dismiss();//关闭对话框
 ```
 ## Note on Releases
-| Plugin Version | Detail | 
-| ------------- | ----------- | ----------- | ----------- |
-| 1.0.0 | origin |
-| 1.0.2 | add broadcast when dialog dismiss |
+ Plugin Version | Detail 
+ ------------- | ----------- 
+ 1.0.0 | origin | 
+ 1.0.2 | add broadcast when dialog dismiss 
 
    See detail in blog: http://blog.csdn.net/yaodong379/article/details/52081932
    
